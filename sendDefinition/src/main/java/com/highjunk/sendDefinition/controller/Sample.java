@@ -8,12 +8,12 @@ public class Sample {
 	
 	@GetMapping("/")
 	public String sample() {
-		return "sample";
+		return "sample.html";
 	}
 	
 	@GetMapping("/insert")
 	public String insert() {
-		return "insert";
+		return "insert.html";
 	}
 
 }
