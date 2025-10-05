@@ -10,5 +10,10 @@ public class Sample {
 	public String sample() {
 		return "sample";
 	}
+	
+	@GetMapping("/insert")
+	public String insert() {
+		return "insert";
+	}
 
 }
