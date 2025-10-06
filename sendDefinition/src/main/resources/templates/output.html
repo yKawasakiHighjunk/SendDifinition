@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>送信対象一覧画面</title>
+</head>
+<body>
+	<form th:action="@{/input}" th:object="${inputForm}" method="post">
+		<div th:object="${inputForm}">
+			<p>
+				名前：<span th:text="*{name}"></span>
+			</p>
+			<p>
+				電話番号：<span th:text="*{tel}"></span>
+			</p>
+			<p>
+				<input type="submit" value="送信ファイル・送信グループ指定ファイル読込画面に戻る" />
+			</p>
+		</div>
+	</form>
+</body>
+</html>

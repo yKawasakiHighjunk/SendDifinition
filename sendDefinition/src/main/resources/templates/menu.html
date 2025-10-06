@@ -5,7 +5,9 @@
 <title>メニュー画面</title>
 </head>
 <body>
-  <h1 th:text="'メニュー画面'"></h1>
-  <h2 th:text="'test push'"></h2>
+	<p th:text="${message}"></p>
+	<p>
+		<a th:href="@{/input}">送信ファイル・送信グループ指定ファイル読込画面へ</a>
+	</p>
 </body>
 </html>
